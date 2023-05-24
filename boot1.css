@@ -1,0 +1,520 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.qqq{
+
+    background-color: rgb(103, 98, 98);
+    box-shadow: rgba(0, 0.30, 0.25, 0.30) 0px 3px 8px;
+    
+}
+.iii:hover{
+    transform: scale(1.2); 
+}
+
+.zzz:hover{
+    color: rgb(255, 0, 0);
+}
+
+  
+ 
+.social-link a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height:2rem;
+    background: transparent;
+    font-size: 2rem;
+    margin:3rem 1.5rem 3rem 0
+
+}
+ 
+.social-link a:hover{
+    transform: scale(1.3);
+    text-decoration: none;
+
+}
+.switch {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg,
+              rgb(74, 72, 75) 20%,
+              rgb(18, 16, 18) 100%);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.363);
+    border-radius: 5px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  .switch div {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    position: absolute;
+  }
+  
+  .switch span {
+    background: #fff;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s, width 0.5s;
+  }
+  
+  .switch .line-1 {
+    width: 50%;
+    transform: translate(-100%, -10px);
+    transform-origin: 0 0;
+  }
+  
+  .switch .line-3 {
+    width: 50%;
+    left: auto;
+    right: 0;
+    transform: translate(0, 10px);
+    transform-origin: 100% 0;
+  }
+  
+  input:checked + div span.line-1 {
+    transform: translate(0, 0) rotate(-45deg);
+  }
+  
+  input:checked +  div span.line-3 {
+    transform: translate(-100%, 0) rotate(-45deg);
+  }
+  
+  input:checked + div span.line-2 {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: 1px;
+    outline: 5px;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(17, 17, 148);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+   
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  
+  .btn:active {
+    border: 1px;
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    border: 1px;
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+  .card p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666;
+  }
+  
+  .card p.small {
+    font-size: 14px;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #00838d;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card1 {
+    display: block;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 15px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 33px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(21);
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+  
+  .card2 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card2:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .card2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+  
+  .card2:hover:before {
+    transform: scale(2.15);
+  }
+  
+  .card3 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 5px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card3 .go-corner {
+    opacity: 0.7;
+  }
+  
+  .card3:hover {
+    border: 1px solid #00838d;
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+  }
+  
+  .card3:hover p {
+    color: #00838d;
+  }
+  
+  .card3:hover .go-corner {
+    transition: opactiy 0.3s linear;
+    opacity: 1;
+  }
+  
+  .card4 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 266px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  .card4 .go-corner {
+    background-color: #191c1c;
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 5;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background-image: linear-gradient(-45deg, #8f479a 1%, #dc2a74 100%);
+  }
+  
+  .card4 .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+  }
+  
+  .card4:hover {
+    border: 1px solid #cd3d73;
+  }
+  
+  .card4 h3 {
+    margin-top: 8px;
+  }
+  
+  .card4:hover .go-corner {
+    margin-right: -12px;
+  }
+  
+  .card4:hover .go-arrow {
+    opacity: 1;
+  }
+  .download-button {
+    position: relative;
+    border-width: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+   }
+   
+   .download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: #242a35;
+    border: solid 1px #e8e8e82d;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+   }
+   
+   .download-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   }
+   
+   .download {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateY(0%);
+    background-color: #01e056;
+    border: solid 1px #01e0572d;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+   }
+   
+   .download-button:hover .download {
+    transform: translateY(100%)
+   }
+   
+   .download svg polyline,.download svg line {
+    animation: docs 1s infinite;
+   }
+   
+   @keyframes docs {
+    0% {
+     transform: translateY(0%);
+    }
+   
+    50% {
+     transform: translateY(-15%);
+    }
+   
+    100% {
+     transform: translateY(0%);
+    }
+   }
+   .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+    border-radius: 36px;
+    font-weight: 700;
+    height: 44px;
+    font-size: 16px;
+    padding-inline: 20px;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+   
+    overflow: hidden;
+    text-align: center;
+    transition: all .25s ease-in-out;
+    z-index: 1;
+    border: none;
+    
+  }
+  
+  .button:is(:hover, :focus)::before {
+    transform: translateX(0%);
+    
+  }
+  
+  .text {
+    white-space: nowrap;
+    line-height: 1.2;
+    padding-inline-end: 44px;
+    z-index: 2;
+    
+    
+  }
+  
+  /* change the width and height to 100% when you use it in your layout */
+  /* .button::after {
+    content: '';
+    position: absolute;
+    height: calc(100% - 1px);
+    width: calc(100% - 2px);
+    border: 1px solid #00838d;
+    border-radius: 36px;
+    z-index: 2;
+     
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:#00838d;
+    z-index: 1;
+    left: -2px;
+    transform: translateX(90%);
+    transition: all .3s ease-out;
+    
+  }
+  
+  .icon {
+    display: inherit;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color:#00838d;
+    z-index: 2;
+  }
+   */
+  button {
+ height: 3em;
+ width: 8em;
+ border: none;
+ border-radius: 10em;
+ background: #016DD9;
+ font-size: 17px;
+ color: #ffffff;
+ font-family: inherit;
+ font-weight: 500;
+}
+
+button:hover {
+ animation: shake3856 0.3s linear infinite both;
+}
+
+@keyframes shake3856 {
+ 0% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+
+ 20% {
+  -webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px);
+ }
+
+ 40% {
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+ }
+
+ 60% {
+  -webkit-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+ }
+
+ 80% {
+  -webkit-transform: translate(2px, -2px);
+  transform: translate(2px, -2px);
+ }
+
+ 100% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+}
